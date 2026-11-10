@@ -1,38 +1,33 @@
 # Jogo da Memória
 
-Jogo da memória responsivo feito com HTML, CSS e JavaScript puro. Não precisa de Node.js, dependências ou banco de dados.
+Jogo da memória feito com HTML, CSS e JavaScript puro. Não precisa instalar pacotes ou dependências.
 
-## Como rodar localmente
+## Executar no computador
 
-### Opção 1 — Mais simples
-1. Baixe o repositório pelo botão Code > Download ZIP no GitHub.
-2. Extraia o arquivo ZIP.
-3. Abra a pasta extraída.
-4. Dê dois cliques em index.html para abrir o jogo no navegador.
+1. Clique em **Code** e depois em **Download ZIP** neste repositório.
+2. Extraia o ZIP em uma pasta.
+3. Abra a pasta e dê dois cliques em **index.html**.
+4. O jogo abrirá no navegador.
 
-### Opção 2 — Pelo Git
-```bash
-git clone https://github.com/joaoaugustosilva06-bit/jogo-da-memoria.git
-cd jogo-da-memoria
-```
-Depois, abra index.html no navegador.
+## Alternativa: executar com Python
 
-### Opção 3 — Servidor local (opcional)
-Se tiver Python instalado, dentro da pasta do projeto execute:
+Abra o terminal dentro da pasta do projeto e rode:
+
 ```bash
 python -m http.server 8000
 ```
-Acesse http://localhost:8000.
 
-## Como jogar
+Acesse http://localhost:8000 no navegador.
+
+## Jogar
+
 - Clique em duas cartas para tentar encontrar um par.
-- Cada tentativa de duas cartas conta como um movimento.
-- Encontre os 8 pares para vencer.
-- Use Reiniciar para embaralhar e começar novamente.
+- Cada tentativa de duas cartas conta como uma jogada.
+- Encontre os oito pares para vencer.
+- Clique em **Reiniciar** para embaralhar e começar de novo.
 
 ## Arquivos
-- index.html: estrutura da página.
-- style.css: visual, animações e responsividade.
-- script.js: embaralhamento, regras, cronômetro e pontuação.
 
-O jogo usa emojis como símbolos e a fonte Nunito do Google Fonts. A fonte é opcional; sem internet, o navegador usa a fonte alternativa disponível.
+- index.html — estrutura da página.
+- style.css — aparência e adaptação para celular.
+- script.js — regras, embaralhamento, cronômetro e pontuação.

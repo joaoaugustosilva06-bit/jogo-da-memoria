@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Jogo da memória: encontre todos os pares!">
+  <title>Jogo da Memória</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Jogo da Memória - início"><span class="brand-icon">✦</span> memory<span class="brand-light">match</span></a>
+      <span class="top-note">UM JOGO PARA TREINAR A MEMÓRIA</span>
+    </header>
+
+    <section class="intro">
+      <div class="eyebrow"><span></span> DESAFIO DO DIA</div>
+      <h1>Encontre os <span>pares.</span></h1>
+      <p>Vire as cartas, memorize as posições e combine todos os emojis.</p>
+    </section>
+
+    <section class="game-panel" aria-label="Área do jogo">
+      <div class="toolbar">
+        <div class="stats">
+          <div class="stat"><span class="stat-icon">◷</span><div><small>TEMPO</small><strong id="timer">00:00</strong></div></div>
+          <div class="stat"><span class="stat-icon">↗</span><div><small>TENTATIVAS</small><strong id="moves">0</strong></div></div>
+          <div class="stat"><span class="stat-icon">✦</span><div><small>ACERTOS</small><strong id="matches">0/8</strong></div></div>
+        </div>
+        <button class="restart-button" id="restart" type="button"><span>↻</span> Reiniciar</button>
+      </div>
+
+      <div class="progress-track" aria-label="Progresso do jogo"><div class="progress-fill" id="progress"></div></div>
+      <div class="board" id="board" aria-label="Cartas do jogo da memória"></div>
+      <div class="game-footer"><span><i class="pulse"></i> <span id="status">Sua vez! Escolha uma carta.</span></span><span>ENCONTRE OS 8 PARES</span></div>
+    </section>
+
+    <footer class="page-footer">FEITO PARA SE DIVERTIR <span>♥</span> E EXERCITAR A MENTE</footer>
+  </main>
+
+  <div class="modal-backdrop" id="winModal" hidden>
+    <section class="win-modal" role="dialog" aria-modal="true" aria-labelledby="winTitle">
+      <div class="trophy">🏆</div>
+      <p class="eyebrow">MISSÃO CUMPRIDA</p>
+      <h2 id="winTitle">Você conseguiu!</h2>
+      <p class="win-copy">Todos os pares encontrados. Mandou muito bem!</p>
+      <div class="win-stats"><div><small>TEMPO</small><strong id="finalTime">00:00</strong></div><div><small>TENTATIVAS</small><strong id="finalMoves">0</strong></div></div>
+      <button class="play-again" id="playAgain" type="button">Jogar novamente <span>↗</span></button>
+    </section>
+  </div>
+</body>
+</html>
